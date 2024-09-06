@@ -252,3 +252,15 @@ body {
     width: 1400px;
     height: auto;
 }
+
+#fotoPerfil {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#fotoPerfil img {
+    width: 120px;
+    height: auto;
+}
