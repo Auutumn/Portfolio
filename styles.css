@@ -232,7 +232,6 @@ body {
     bottom: -1750px;
     right: 200px;
     z-index: 10;
-    animation: float 3s ease-in-out infinite;
 }
 
 #cosoDeLosLinks img {
@@ -240,18 +239,6 @@ body {
     height: auto;
 }
 
-
-#Mastexto {
-    position: absolute;
-    bottom: -2200px;
-    right: 1px;
-    z-index: 10;
-}
-
-#Mastexto img {
-    width: 1400px;
-    height: auto;
-}
 
 #fotoPerfil {
     position: absolute;
@@ -262,5 +249,136 @@ body {
 
 #fotoPerfil img {
     width: 120px;
+    height: auto;
+}
+
+#espiralCV {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px; /* Ajusta esto para mover todo un poco más a la izquierda */
+    z-index: 10;
+}
+
+#espiral {
+    width: 150px; /* Tamaño de la imagen giratoria */
+    height: auto;
+    animation: spin 5s linear infinite; /* Solo la espiral gira */
+}
+
+#CV {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+}
+
+#CV img {
+    width: 50px;
+    height: auto;
+    transition: filter 0.3s ease; 
+}
+
+#CV img:hover {
+    filter: hue-rotate(180deg) brightness(1.5);
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#separador {
+    text-align: center; /* Centra la imagen */
+    margin-top: -300px; /* Espacio arriba del separador */
+}
+
+#separador img {
+    width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    max-width: 1500px; /* Ajusta el tamaño máximo si es necesario */
+    height: auto; /* Mantiene la proporción */
+}
+
+#como-disenadora {
+    text-align: center; /* Centra la imagen */
+    margin-top: -50px; /* Espacio entre el separador y la imagen */
+}
+
+#como-disenadora img {
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    max-width: 800px; /* Tamaño máximo de 800px si es necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#mouse {
+    position: relative;
+    margin-top: -270px; /* Añade espacio superior para separar de la imagen anterior */
+    text-align: left; /* Alinea la imagen a la izquierda */
+}
+
+#mouse img {
+    width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+#mis-habilidades {
+    position: relative;
+    margin-top: 20px; /* Espacio superior entre la imagen "Mouse" y "Mis habilidades" */
+    margin-left: 40px; /* Mueve la imagen un poco a la derecha */
+    text-align: left;
+}
+
+#mis-habilidades img {
+    width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+#listado {
+    position: relative;
+    margin-top: 35px; /* Espacio superior entre la imagen "Mis habilidades" y "Listado" */
+    margin-left: 50px; /* Mueve la imagen un poco a la derecha */
+    text-align: left; /* Alinea la imagen a la izquierda */
+}
+
+#listado img {
+    width: 650px; /* Ajusta el tamaño de la imagen "Listado" */
+    height: auto;
+}
+
+#monita-tateti {
+    position: relative;
+    right: 50px; /* Mueve la imagen más a la izquierda */
+    margin-top: -250px; /* Sube la imagen para que quede más arriba */
+    text-align: right;
+}
+
+#monita-tateti img {
+    width: 600px;
+    height: auto;
+    animation: levitation 3s ease-in-out infinite; /* Aplica la animación de levitación */
+}
+
+@keyframes levitation {
+    0% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+        transform: translateY(-20px); /* Sube la imagen */
+    }
+    100% {
+        transform: translateY(0); /* Vuelve a la posición original */
+    }
+}
+
+#herramientas {
+    margin-top: 50px; /* Ajusta el espacio entre las imágenes */
+    text-align: left; /* Alinea la imagen a la izquierda */
+}
+
+#herramientas img {
+    width: 1100px; /* Ajusta el tamaño de la imagen */
     height: auto;
 }
