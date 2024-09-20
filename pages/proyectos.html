@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Proyectos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles-proyectos.css">
+</head>
+<body>
+
+    <div id="pantallaCarga">
+        <div class="loader"></div>
+      </div>
+    
+    <div id="backgroundContainer">
+        <img src="https://cdn.pixabay.com/photo/2024/09/20/13/02/13-02-38-281_960_720.png" alt="Imagen de Fondo" id="proyecto">
+    </div>
+
+    <div class="divider"></div> <!-- Rectángulo negro divisor -->
+
+    <div id="sideMenu" class="menu">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#newBottomRightImage">Sobre mí</a>
+        <a href="proyectos.html">Mis proyectos</a>
+        <a href="../index.html#contact">Contáctame</a>
+        <h3>Encuéntrame en:</h3>
+        <ul class="social-links">
+            <li><a href="https://www.behance.net/stellamwendler" target="_blank">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/zara-rojas-076149282/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:zafini16@gmail.com">Gmail</a></li>
+            <li><a href="https://pin.it/lkNC2LmV9" target="_blank">Pinterest</a></li>
+        </ul>
+    </div>
+    
+    <span class="openBtn" onclick="openNav()">&#9776; </span>
+
+    
+    <h2 class="projects-title">Sobre mis proyectos</h2> <!-- Título agregado -->
+    
+
+    <div class="card-container" id="projectCards"></div>
+
+<script>
+    fetch('../proyectos.json')
+        .then(response => response.json())
+        .then(data => {
+            const projectCards = document.getElementById('projectCards');
+            data.forEach(project => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.innerHTML = `
+                    <img src="${project.image}" alt="${project.title}">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                `;
+                projectCards.appendChild(card);
+            });
+        })
+        .catch(error => console.error('Error al cargar los proyectos:', error));
+</script>
+
+
+    <div id="footer-placeholder"></div>
+
+
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el footer:', error));
+    </script>
+
+    <script src="../script.js"></script>
+</body>
+</html>

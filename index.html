@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
 
-
+    <div id="pantallaCarga">
+        <div class="loader"></div>
+    </div>
 
     <div id="backgroundContainer">
         <img src="https://imagizer.imageshack.com/img924/8954/bEcen3.png" alt="Imagen de Fondo">
@@ -17,8 +19,8 @@
 
     <div id="sideMenu" class="menu">
         <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-        <a href="#about">Sobre mí</a>
-        <a href="proyectos.html">Mis proyectos</a>
+        <a href="#newBottomRightImage">Sobre mí</a>
+        <a href="/pages/proyectos.html">Mis proyectos</a>
         <a href="#contact">Contáctame</a>
         <h3>Encuéntrame en:</h3>
         <ul class="social-links">
@@ -84,7 +86,7 @@
 
 
     <div id="fotoPerfil">
-        <a href="inicio-sesion.html">
+        <a href="/pages/inicio-sesion.html">
             <img src="https://cdn.pixabay.com/photo/2024/09/06/14/01/icons-9027615_1280.png" alt="foto perfil">
         </a>
     </div>
@@ -130,7 +132,7 @@
     
 
    <!-- Formulario de contacto -->
-<div class="wrapper">
+<div class="wrapper" id="contact">
     <form action="">
       <h1>Contáctame</h1>
       <div class="input-box">
@@ -192,7 +194,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
-    <link rel="stylesheet" href="styles-proyectos.css">
+    <link rel="stylesheet" href="/css/styles-proyectos.css">
 </head>
 <body>
     
@@ -201,7 +203,7 @@
     <div id="footer-placeholder"></div>
 
     <script>
-        fetch('footer.html')
+        fetch('/pages/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer-placeholder').innerHTML = data;
