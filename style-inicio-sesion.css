@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #ff0a54;
+  background-color: #FF00CC;
   background-size: cover;
   background-position: center;
 }
@@ -106,7 +106,13 @@ body {
   font-size: 16px;
   color: #333;
   font-weight: 600;
+  transition: background-color 0.3s ease; /* Añade la transición */
 }
+
+.wrapper .btn:hover {
+  background-color: #FFFF00; /* Cambia el color a amarillo */
+}
+
 
 .wrapper .register-link {
   font-size: 14.5px;
