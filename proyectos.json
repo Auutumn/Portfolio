@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Modelo habitación japonesa",
+        "description": "Proyecto 3D. Modelado de una habitación tradicional japonesa.",
+        "image": "https://i.pinimg.com/736x/44/5f/9e/445f9e84774d91c8126ff3ebb6264364.jpg"
+    },
+    {
+        "title": "Modelo cocina",
+        "description": "Proyecto 3D. Modelado de una cocina moderna renderizada con Blender.",
+        "image": "https://i.pinimg.com/736x/db/ac/2f/dbac2f147eb9b7f09817e073a9d3edb2.jpg"
+    },
+    {
+        "title": "Modelo living",
+        "description": "Proyecto 3D. Modelado de una habitación de estar renderizada en Blender.",
+        "image": "https://i.pinimg.com/736x/bf/41/85/bf4185999510ab407af252c028cb4937.jpg"
+    },
+    {
+        "title": "Habitaciones combinadas",
+        "description": "Proyecto 3D. Modelado de habitaciones de casa combinadas con textura.",
+        "image": "https://i.pinimg.com/736x/02/41/64/02416437809ff54c399d953edd0ca911.jpg"
+    }
+]
